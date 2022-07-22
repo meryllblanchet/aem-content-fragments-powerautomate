@@ -1,0 +1,37 @@
+{
+  "name": "content-fragments-md-editor",
+  "version": "0.0.1",
+  "dependencies": {
+    "@adobe/aio-sdk": "^3.0.0",
+    "@adobe/exc-app": "^0.2.15",
+    "@adobe/react-spectrum": "^3.7.0",
+    "@spectrum-css/asset": "^2.0.5",
+    "@spectrum-css/card": "^2.0.6",
+    "@spectrum-css/quickaction": "^2.0.6",
+    "@spectrum-icons/workflow": "^3.2.0",
+    "@uiw/react-md-editor": "^3.4.10",
+    "core-js": "^3.6.5",
+    "node-fetch": "^2.6.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.13.1",
+    "react-error-boundary": "^2.2.2",
+    "regenerator-runtime": "^0.13.5",
+    "use-error-boundary": "^1.2.3"
+  },
+  "devDependencies": {
+    "@adobe/wskdebug": "^1.1.3",
+    "@babel/core": "^7.10.2",
+    "@babel/plugin-transform-react-jsx": "^7.10.2",
+    "@babel/polyfill": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@openwhisk/wskdebug": "^1.3.0",
+    "jest": "^26.0.1"
+  },
+  "scripts": {
+    "test": "jest",
+    "e2e": "jest --collectCoverage=false --testRegex ./e2e"
+  },
+  "engines": {
+    "node": "^10 || ^12 || ^14"
+  }
+}

@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+}
+
+.provider {
+  height: 100vh;
+  overflow: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(256px, 256px));
+  grid-gap: 16px;
+  margin: 32px 0;
+  justify-items: center;
+}
+
+.grid-item {
+  width: 208px;
+  height: 264px;
+  cursor: pointer;
+}
+
+/*rsp3 bug*/
+svg[class*="_spectrum-UIIcon-FolderBreadcrumb"] {
+  padding: 0 !important;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.spectrum-Asset-image {
+  animation: fadeIn cubic-bezier(.45, 0, .4, 1) 1s;
+}
+
+.console {
+  transition: opacity 300ms cubic-bezier(.45, 0, .4, 1);
+}
+
+.console.is-disabled {
+  opacity: .4;
+  pointer-events: none;
+}
+
+header {
+  display: flex;
+  position: sticky;
+  top: -1px;
+  padding: 16px 0;
+  background: rgb(245, 245, 245);
+  z-index: 1;
+}
